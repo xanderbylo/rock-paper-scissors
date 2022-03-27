@@ -6,7 +6,7 @@ This is a rock paper scissors game I created as part of [The Odin Project](https
 
 ## :computer: Live link
 
-[landing-page](https://xanderbylo.github.io/rock-paper-scissors/)
+[rock-paper-scissors](https://xanderbylo.github.io/rock-paper-scissors/)
 
 ## :floppy_disk: Technologies
 
