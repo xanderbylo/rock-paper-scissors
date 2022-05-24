@@ -1,7 +1,5 @@
-const playerSelection = 'rock';
+const playerSelection = prompt('Rock, Paper or Scissors?');
 const computerSelection = computerPlay();
-
-
 
 function computerPlay() {
     let options = ['rock', 'paper', 'scissors'];
