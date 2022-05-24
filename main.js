@@ -1,7 +1,7 @@
 const playerSelection = 'rock';
 const computerSelection = computerPlay();
 
-console.log(playerSelection, computerSelection)
+
 
 function computerPlay() {
     let options = ['rock', 'paper', 'scissors'];
@@ -13,11 +13,21 @@ function computerPlay() {
 function playRound() {
     if (playerSelection.toLowerCase() === computerSelection) {
         alert("It's a draw!");
+        console.log(playerSelection, computerSelection)
     } else if (computerSelection === 'paper') {
         alert('You lose! Paper beats Rock!');
+        console.log(playerSelection, computerSelection)
     } else {
         alert('You win! Rock beats Scissors!');
+        console.log(playerSelection, computerSelection)
     }
 }
 
-playRound();
+function game() {
+    for (let round = 1; round < 6; round++) {
+        playRound();
+        console.log('Round ' + round)
+    }
+}
+
+game();
