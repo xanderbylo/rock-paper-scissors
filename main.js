@@ -1,6 +1,3 @@
-const playerSelection = prompt('Rock, Paper or Scissors?');
-const computerSelection = computerPlay();
-
 function computerPlay() {
     let options = ['rock', 'paper', 'scissors'];
     let choice = options[Math.floor(Math.random() * options.length)];
@@ -9,6 +6,9 @@ function computerPlay() {
 }
 
 function playRound() {
+    const computerSelection = computerPlay();
+    const playerSelection = prompt('Rock, Paper or Scissors?');
+
     if (playerSelection.toLowerCase() === computerSelection) {
         alert("It's a draw!");
         console.log(playerSelection, computerSelection)
