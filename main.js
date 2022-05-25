@@ -12,11 +12,23 @@ function playRound() {
     if (playerSelection.toLowerCase() === computerSelection) {
         alert("It's a draw!");
         console.log(playerSelection, computerSelection)
-    } else if (computerSelection === 'paper') {
+    } else if (playerSelection.toLowerCase() === 'rock' && computerSelection === 'paper') {
         alert('You lose! Paper beats Rock!');
         console.log(playerSelection, computerSelection)
-    } else {
+    } else if (playerSelection.toLowerCase() === 'rock' && computerSelection === 'scissors') {
         alert('You win! Rock beats Scissors!');
+        console.log(playerSelection, computerSelection)
+    } else if (playerSelection.toLowerCase() === 'paper' && computerSelection === 'scissors') {
+        alert('You lose! Scissors beats Paper!');
+        console.log(playerSelection, computerSelection)
+    } else if (playerSelection.toLowerCase() === 'paper' && computerSelection === 'rock') {
+        alert('You win! Paper beats Rock!');
+        console.log(playerSelection, computerSelection)
+    } else if (playerSelection.toLowerCase() === 'scissors' && computerSelection === 'rock') {
+        alert('You lose! Rock beats Scissors!');
+        console.log(playerSelection, computerSelection)
+    } else if (playerSelection.toLowerCase() === 'scissors' && computerSelection === 'paper') {
+        alert('You win! Scissors beats Paper!');
         console.log(playerSelection, computerSelection)
     }
 }
