@@ -2,7 +2,7 @@
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/xanderbylo/rock-paper-scissors) 
 
-This is a rock paper scissors game I created as part of [The Odin Project](https://www.theodinproject.com/). It's the first JavaScript program I've built from scratch.
+This is a rock paper scissors game I created as part of [The Odin Project](https://www.theodinproject.com/). It prompts the player to enter either rock, paper or scissors and then compares that to the computers answer. It then declares a winner. The game plays for 5 rounds and keeps score.
 
 ## :computer: Live link
 
