@@ -54,6 +54,17 @@ function game() {
         playRound();
         console.log('Round ' + round)
     }
+
+    if (round = 5 && playerScore > computerScore) {
+        alert('Player wins ' + playerScore + '-' + computerScore + '!');
+        console.log('Player wins!')
+    } else if (round = 5 && computerScore > playerScore) {
+        alert('Computer wins ' + computerScore + '-' + playerScore + '!');
+        console.log('Computer wins!')
+    } else {
+        alert("It's a draw! " + playerScore + '-' + computerScore + '!');
+        console.log("It's a draw!")
+    }
 }
 
 game();
